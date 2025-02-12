@@ -17,3 +17,8 @@ El proposito de este proyecto es poner en practica lo aprendido en el bootcamp y
 - Tambien es necesario crear una función para que haga las elecciones de la maquina.
 
 - Por ultimo tendremos que organizar la relevancia de cada selección para imponer a un ganador.
+
+---
+# Participantes del proyecto: 
+
+- Kevin manuel Gómez Rojas.
