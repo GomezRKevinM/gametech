@@ -22,3 +22,4 @@ El proposito de este proyecto es poner en practica lo aprendido en el bootcamp y
 # Participantes del proyecto: 
 
 - Kevin manuel Gómez Rojas.
+- Jair Andres Hamburguer Estrada. :D
