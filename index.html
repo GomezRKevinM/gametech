@@ -3,16 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=play_arrow" />
     <title>Piedra papel o tijeras</title>
 </head>
 <body>
     <header>
-        <h1>Piedra Papel o Tijeras</h1>
+        <h1 class="h1-title">Piedra Papel o Tijeras</h1>
         <nav>
             <a href="" class="navAncores">Inicio</a>
             <a href="" class="navAncores">Acerca de</a>
             <button class="navAncores">Instrucciones</button>
         </nav>
     </header>
+    <main>
+
+        <div class="game-area">
+            <div class="nameusers">
+                <span class="username">usuario</span>
+                <span class="username">Maquina</span>
+            </div>
+            <button class="play">
+                <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e8eaed"><path d="M320-203v-560l440 280-440 280Zm60-280Zm0 171 269-171-269-171v342Z"/></svg>
+            </button>
+            <div class="contador_container">
+                <span id="contador">0:00</span>
+            </div>
+        </div>
+        <section id="controls-container">
+            <h2>Controles</h2>
+            <div class="group-btn">
+                <button class="controls-btn" onclick="select(0)">
+                    <img src="./assets/icon/piedra.png" alt="" class="btn-control-icon">
+                    <h3 class="name-control">Piedra</h3>
+                </button>
+                <button class="controls-btn" onclick="select(1)">
+                    <img src="./assets/icon/papel.png" alt="" class="btn-control-icon">
+                    <h3 class="name-control">Papel</h3>
+                </button>
+                <button class="controls-btn" onclick="select(2)">
+                    <img src="./assets/icon/tijeras.png" alt="" class="btn-control-icon">
+                    <h3 class="name-control">Tijeras</h3>
+                </button>
+            </div>
+        </section>
+
+        <section id="instrucciones">
+            <h2>Instrucciones del juego</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nulla perspiciatis similique ipsam laudantium consequatur suscipit debitis fugiat ea assumenda voluptates a, repudiandae sint, aliquam nam labore dolore, maiores doloremque?</p>
+        </section>
+    </main>
+    <script src="./script/main.js"></script>
 </body>
 </html>

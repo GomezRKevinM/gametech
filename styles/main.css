@@ -2,4 +2,183 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family:monospace;
+}
+
+/*  ======================
+        Estilado general
+    ====================== */
+
+body{
+    background-color: black;
+    color: #fff;
+}
+.h1-title{
+    color: #00ffc8;
+    font-weight: 900;
+    text-shadow: 0 0 8px #00ffc8;
+    user-select: none;
+}
+.navAncores{
+    text-decoration: none;
+    color: #b4ebdf;
+    background-color:transparent;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    user-select: none;
+}
+.navAncores:hover{
+    cursor: pointer;
+    color: #00ffc8;
+    text-shadow: 0 0 5px #00ffc8;
+}
+nav{
+    display: flex;
+    gap: 25px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 17px;
+    margin-bottom: 35px;
+}
+
+/*  ======================
+       Estilado del game area
+    ====================== */
+
+.game-area{
+    width: 85vw;
+    height: 50vh;
+    border: 2px solid rgba(50,50,50,0.2);
+    background: rgba(121, 243, 212, 0.596);
+    border-radius: 8px;
+    box-shadow: 0 0 5px #00ffc8;
+    margin: auto;
+    margin-bottom: 25px;
+}
+.play-icon{
+    background-color: #00ffc830;
+    border-radius: 50%;
+    padding: 5px 7px;
+    transition: all 200ms ease-in;
+}
+.play-icon:hover{
+    box-shadow: inset 2px 2px 4px #333;
+}
+.play{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    background: transparent;
+    border: 2px solid #f2f2f245;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 200ms ease-in;
+}
+.play:hover{
+    border: 2px solid transparent;
+}
+.nameusers{
+    width: 100%;
+    padding: 8px 25px;
+    display: flex;
+    justify-content: space-between ;
+    user-select: none;
+}
+.username{
+    font-size: 1.5rem;
+    text-shadow: #fff 0 0 7px;
+    font-weight: 900;
+    display: none;
+}
+.contador_container{
+    width: 20vw;
+    height: 20vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #33333320;
+    position: relative;
+    top: 8vh;
+    left: 31vw;
+    display: none;
+}
+#contador{
+    color: #00ffc8;
+    font-size: 3rem;
+    font-weight: 900;
+    text-shadow: 0 0 5px#c4c4c4;
+}
+/*  ======================
+       Estilado controles
+    ====================== */
+#controls-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 12vh;
+    flex-direction: column;
+    display: none;
+}
+/* Contenedor de los botones */
+.group-btn{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: auto;
+}
+.controls-btn{
+    border-radius: 50%;
+    border: 2px solid transparent;
+    position: relative;
+}
+.controls-btn:hover{
+    border: 2px solid #00ffc8;
+    box-shadow: #00ffc8 0 0 7px;
+}
+.controls-btn:hover > .name-control{
+    color: #00ffc8;
+    text-shadow: 0 0 10px #00ffc8;
+}
+.name-control{
+    position: absolute;
+    top: 6dvh;
+    left: 0.7vw;
+    color: #fff;
+    text-shadow: 0 0 7px #fff;
+}
+.btn-control-icon{
+    height: 45px;
+    padding: 5px 7px;
+}
+
+/*  ======================
+       Estilado instrucciones
+    ====================== */
+#instrucciones{
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    user-select: none;
+}
+#instrucciones > h2{
+    color: #00ffc8;
+    text-shadow: #00ffc8 0 0 5px;
+    font-size: 2.4rem;
+}
+#instrucciones > p{
+    font-size: 1.5rem;
+    text-shadow: #fff 0 0 5px;
+}
+.visible{
+    display: flex;
 }
